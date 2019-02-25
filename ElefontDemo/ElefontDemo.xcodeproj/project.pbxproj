@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		554B83841E6B50C400798F7A /* Elefont.h in Headers */ = {isa = PBXBuildFile; fileRef = 554B83821E6B50C400798F7A /* Elefont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		554B83871E6B50C400798F7A /* Elefont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554B83801E6B50C400798F7A /* Elefont.framework */; };
+		554B83881E6B50C400798F7A /* Elefont.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554B83801E6B50C400798F7A /* Elefont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		558967E41E6BA9EE002CF66C /* Elefont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558967E31E6BA9EE002CF66C /* Elefont.swift */; };
+		8DEB04CC2223F12C000C73C3 /* LocalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB04C12223F12C000C73C3 /* LocalVC.swift */; };
+		8DEB04CD2223F12C000C73C3 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB04C22223F12C000C73C3 /* BaseVC.swift */; };
+		8DEB04CE2223F12C000C73C3 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB04C32223F12C000C73C3 /* TabVC.swift */; };
+		8DEB04CF2223F12C000C73C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04C42223F12C000C73C3 /* LaunchScreen.xib */; };
+		8DEB04D02223F12C000C73C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04C62223F12C000C73C3 /* Main.storyboard */; };
+		8DEB04D12223F12C000C73C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04C82223F12C000C73C3 /* Images.xcassets */; };
+		8DEB04D22223F12C000C73C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB04C92223F12C000C73C3 /* AppDelegate.swift */; };
+		8DEB04D42223F12C000C73C3 /* BundleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEB04CB2223F12C000C73C3 /* BundleVC.swift */; };
+		8DEB04FA2223F2D5000C73C3 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04EF2223F2D5000C73C3 /* OpenSans-Semibold.ttf */; };
+		8DEB04FB2223F2D5000C73C3 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F02223F2D5000C73C3 /* OpenSans-Light.ttf */; };
+		8DEB04FC2223F2D5000C73C3 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F12223F2D5000C73C3 /* OpenSans-Italic.ttf */; };
+		8DEB04FD2223F2D5000C73C3 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F22223F2D5000C73C3 /* OpenSans-ExtraBold.ttf */; };
+		8DEB04FE2223F2D5000C73C3 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F32223F2D5000C73C3 /* OpenSans-LightItalic.ttf */; };
+		8DEB04FF2223F2D5000C73C3 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F42223F2D5000C73C3 /* OpenSans-Bold.ttf */; };
+		8DEB05002223F2D5000C73C3 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F52223F2D5000C73C3 /* OpenSans-SemiboldItalic.ttf */; };
+		8DEB05012223F2D5000C73C3 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F62223F2D5000C73C3 /* OpenSans-ExtraBoldItalic.ttf */; };
+		8DEB05022223F2D5000C73C3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F72223F2D5000C73C3 /* LICENSE.txt */; };
+		8DEB05032223F2D5000C73C3 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F82223F2D5000C73C3 /* OpenSans-Regular.ttf */; };
+		8DEB05042223F2D5000C73C3 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB04F92223F2D5000C73C3 /* OpenSans-BoldItalic.ttf */; };
+		8DEB05062223F2DB000C73C3 /* KineticPlasma in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB05052223F2DB000C73C3 /* KineticPlasma */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554B83851E6B50C400798F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E7CBE831AF9BD7200009618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554B837F1E6B50C400798F7A;
+			remoteInfo = Elefont;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		550697A71C685178008C5BAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				554B83881E6B50C400798F7A /* Elefont.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		554B83801E6B50C400798F7A /* Elefont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elefont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		554B83821E6B50C400798F7A /* Elefont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elefont.h; sourceTree = "<group>"; };
+		554B83831E6B50C400798F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558967E31E6BA9EE002CF66C /* Elefont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Elefont.swift; path = ../../Sources/Elefont.swift; sourceTree = "<group>"; };
+		8DEB04C12223F12C000C73C3 /* LocalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalVC.swift; sourceTree = "<group>"; };
+		8DEB04C22223F12C000C73C3 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		8DEB04C32223F12C000C73C3 /* TabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		8DEB04C52223F12C000C73C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8DEB04C72223F12C000C73C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DEB04C82223F12C000C73C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8DEB04C92223F12C000C73C3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DEB04CA2223F12C000C73C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DEB04CB2223F12C000C73C3 /* BundleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleVC.swift; sourceTree = "<group>"; };
+		8DEB04EF2223F2D5000C73C3 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		8DEB04F02223F2D5000C73C3 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		8DEB04F12223F2D5000C73C3 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		8DEB04F22223F2D5000C73C3 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8DEB04F32223F2D5000C73C3 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		8DEB04F42223F2D5000C73C3 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		8DEB04F52223F2D5000C73C3 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		8DEB04F62223F2D5000C73C3 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		8DEB04F72223F2D5000C73C3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		8DEB04F82223F2D5000C73C3 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		8DEB04F92223F2D5000C73C3 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8DEB05052223F2DB000C73C3 /* KineticPlasma */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KineticPlasma; sourceTree = "<group>"; };
+		8E7CBE8B1AF9BD7200009618 /* ElefontDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElefontDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		554B837C1E6B50C400798F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7CBE881AF9BD7200009618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554B83871E6B50C400798F7A /* Elefont.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		554B83811E6B50C400798F7A /* Elefont */ = {
+			isa = PBXGroup;
+			children = (
+				554B83821E6B50C400798F7A /* Elefont.h */,
+				558967E31E6BA9EE002CF66C /* Elefont.swift */,
+				554B83831E6B50C400798F7A /* Info.plist */,
+			);
+			path = Elefont;
+			sourceTree = "<group>";
+		};
+		8DEB04C02223F12C000C73C3 /* ElefontDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8DEB04C92223F12C000C73C3 /* AppDelegate.swift */,
+				8DEB04C22223F12C000C73C3 /* BaseVC.swift */,
+				8DEB04CB2223F12C000C73C3 /* BundleVC.swift */,
+				8DEB04C82223F12C000C73C3 /* Images.xcassets */,
+				8DEB04CA2223F12C000C73C3 /* Info.plist */,
+				8DEB04C42223F12C000C73C3 /* LaunchScreen.xib */,
+				8DEB04C12223F12C000C73C3 /* LocalVC.swift */,
+				8DEB04C62223F12C000C73C3 /* Main.storyboard */,
+				8DEB04C32223F12C000C73C3 /* TabVC.swift */,
+			);
+			path = ElefontDemo;
+			sourceTree = "<group>";
+		};
+		8DEB04EE2223F2D5000C73C3 /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				8DEB04F72223F2D5000C73C3 /* LICENSE.txt */,
+				8DEB04F42223F2D5000C73C3 /* OpenSans-Bold.ttf */,
+				8DEB04F92223F2D5000C73C3 /* OpenSans-BoldItalic.ttf */,
+				8DEB04F22223F2D5000C73C3 /* OpenSans-ExtraBold.ttf */,
+				8DEB04F62223F2D5000C73C3 /* OpenSans-ExtraBoldItalic.ttf */,
+				8DEB04F12223F2D5000C73C3 /* OpenSans-Italic.ttf */,
+				8DEB04F02223F2D5000C73C3 /* OpenSans-Light.ttf */,
+				8DEB04F32223F2D5000C73C3 /* OpenSans-LightItalic.ttf */,
+				8DEB04F82223F2D5000C73C3 /* OpenSans-Regular.ttf */,
+				8DEB04EF2223F2D5000C73C3 /* OpenSans-Semibold.ttf */,
+				8DEB04F52223F2D5000C73C3 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		8DEB05082223F31D000C73C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8DEB05052223F2DB000C73C3 /* KineticPlasma */,
+				8DEB04EE2223F2D5000C73C3 /* OpenSans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8E7CBE821AF9BD7200009618 = {
+			isa = PBXGroup;
+			children = (
+				554B83811E6B50C400798F7A /* Elefont */,
+				8DEB04C02223F12C000C73C3 /* ElefontDemo */,
+				8DEB05082223F31D000C73C3 /* Fonts */,
+				8E7CBE8C1AF9BD7200009618 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E7CBE8C1AF9BD7200009618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554B83801E6B50C400798F7A /* Elefont.framework */,
+				8E7CBE8B1AF9BD7200009618 /* ElefontDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		554B837D1E6B50C400798F7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				554B83841E6B50C400798F7A /* Elefont.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		554B837F1E6B50C400798F7A /* Elefont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554B838B1E6B50C400798F7A /* Build configuration list for PBXNativeTarget "Elefont" */;
+			buildPhases = (
+				554B837B1E6B50C400798F7A /* Sources */,
+				554B837C1E6B50C400798F7A /* Frameworks */,
+				554B837D1E6B50C400798F7A /* Headers */,
+				554B837E1E6B50C400798F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elefont;
+			productName = Elefont;
+			productReference = 554B83801E6B50C400798F7A /* Elefont.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E7CBE8A1AF9BD7200009618 /* ElefontDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7CBEAA1AF9BD7200009618 /* Build configuration list for PBXNativeTarget "ElefontDemo" */;
+			buildPhases = (
+				8E7CBE871AF9BD7200009618 /* Sources */,
+				8E7CBE881AF9BD7200009618 /* Frameworks */,
+				8E7CBE891AF9BD7200009618 /* Resources */,
+				550697A71C685178008C5BAF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				554B83861E6B50C400798F7A /* PBXTargetDependency */,
+			);
+			name = ElefontDemo;
+			productName = "Font Blaster Sample Project";
+			productReference = 8E7CBE8B1AF9BD7200009618 /* ElefontDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E7CBE831AF9BD7200009618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					554B837F1E6B50C400798F7A = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					8E7CBE8A1AF9BD7200009618 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 857WZBP936;
+						DevelopmentTeamName = "";
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 8E7CBE861AF9BD7200009618 /* Build configuration list for PBXProject "ElefontDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E7CBE821AF9BD7200009618;
+			productRefGroup = 8E7CBE8C1AF9BD7200009618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E7CBE8A1AF9BD7200009618 /* ElefontDemo */,
+				554B837F1E6B50C400798F7A /* Elefont */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		554B837E1E6B50C400798F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7CBE891AF9BD7200009618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEB05022223F2D5000C73C3 /* LICENSE.txt in Resources */,
+				8DEB04FA2223F2D5000C73C3 /* OpenSans-Semibold.ttf in Resources */,
+				8DEB05062223F2DB000C73C3 /* KineticPlasma in Resources */,
+				8DEB04D12223F12C000C73C3 /* Images.xcassets in Resources */,
+				8DEB04FD2223F2D5000C73C3 /* OpenSans-ExtraBold.ttf in Resources */,
+				8DEB04CF2223F12C000C73C3 /* LaunchScreen.xib in Resources */,
+				8DEB04FC2223F2D5000C73C3 /* OpenSans-Italic.ttf in Resources */,
+				8DEB04FF2223F2D5000C73C3 /* OpenSans-Bold.ttf in Resources */,
+				8DEB05002223F2D5000C73C3 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				8DEB04FB2223F2D5000C73C3 /* OpenSans-Light.ttf in Resources */,
+				8DEB04FE2223F2D5000C73C3 /* OpenSans-LightItalic.ttf in Resources */,
+				8DEB05042223F2D5000C73C3 /* OpenSans-BoldItalic.ttf in Resources */,
+				8DEB05012223F2D5000C73C3 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				8DEB05032223F2D5000C73C3 /* OpenSans-Regular.ttf in Resources */,
+				8DEB04D02223F12C000C73C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		554B837B1E6B50C400798F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558967E41E6BA9EE002CF66C /* Elefont.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E7CBE871AF9BD7200009618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEB04D22223F12C000C73C3 /* AppDelegate.swift in Sources */,
+				8DEB04CE2223F12C000C73C3 /* TabVC.swift in Sources */,
+				8DEB04CC2223F12C000C73C3 /* LocalVC.swift in Sources */,
+				8DEB04D42223F12C000C73C3 /* BundleVC.swift in Sources */,
+				8DEB04CD2223F12C000C73C3 /* BaseVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554B83861E6B50C400798F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554B837F1E6B50C400798F7A /* Elefont */;
+			targetProxy = 554B83851E6B50C400798F7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DEB04C42223F12C000C73C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEB04C52223F12C000C73C3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8DEB04C62223F12C000C73C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DEB04C72223F12C000C73C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		554B83891E6B50C400798F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Elefont/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaicristiantanase.Elefont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		554B838A1E6B50C400798F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Elefont/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihaicristiantanase.Elefont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E7CBEA81AF9BD7200009618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8E7CBEA91AF9BD7200009618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E7CBEAB1AF9BD7200009618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 857WZBP936;
+				INFOPLIST_FILE = "$(SRCROOT)/Elefont/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mihaicristiantanase.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8E7CBEAC1AF9BD7200009618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 857WZBP936;
+				INFOPLIST_FILE = "$(SRCROOT)/Elefont/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mihaicristiantanase.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		554B838B1E6B50C400798F7A /* Build configuration list for PBXNativeTarget "Elefont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				554B83891E6B50C400798F7A /* Debug */,
+				554B838A1E6B50C400798F7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7CBE861AF9BD7200009618 /* Build configuration list for PBXProject "ElefontDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7CBEA81AF9BD7200009618 /* Debug */,
+				8E7CBEA91AF9BD7200009618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7CBEAA1AF9BD7200009618 /* Build configuration list for PBXNativeTarget "ElefontDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7CBEAB1AF9BD7200009618 /* Debug */,
+				8E7CBEAC1AF9BD7200009618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E7CBE831AF9BD7200009618 /* Project object */;
+}
