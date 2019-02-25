@@ -58,6 +58,7 @@ public final class Elefont {
     var error: Unmanaged<CFError>?
     if CTFontManagerUnregisterGraphicsFont(ref, &error) {
       log("Successfully released font: '\(name)'.")
+      allLoadedFonts.remove(at: idx)
       return true
     } else {
       guard let error = error?.takeRetainedValue() else {
