@@ -57,7 +57,7 @@ public final class Elefont {
 typealias FontPath = URL
 typealias FontName = String
 typealias FontExtension = String
-typealias Font = (url: FontPath, name: FontName)
+typealias Font = (url: FontPath, name: FontName, ref: CGFont?)
 
 var allLoadedFonts: [Font] = []
 
@@ -132,12 +132,13 @@ extension Elefont {
     let fileURL: FontPath = font.url
     let name = font.name
     var loadedFontName: String?
+    var ref: CGFont?
     var error: Unmanaged<CFError>?
     if let data = try? Data(contentsOf: fileURL) as CFData,
       let dataProvider = CGDataProvider(data: data) {
       workaroundDeadlock()
 
-      let ref = CGFont(dataProvider)
+      ref = CGFont(dataProvider)
 
       if CTFontManagerRegisterGraphicsFont(ref!, &error) {
         if let postScriptName = ref?.postScriptName {
@@ -157,7 +158,7 @@ extension Elefont {
       log("Failed to load font '\(name)': \(String(describing: errorDescription))")
     }
     if let lfn = loadedFontName {
-      return (fileURL, lfn)
+      return (fileURL, lfn, ref)
     }
     return nil
   }
@@ -172,7 +173,7 @@ extension Elefont {
     var fonts = [Font]()
     for fontUrl in contents {
       if let fontName = font(fontUrl) {
-        fonts.append((fontUrl, fontName))
+        fonts.append((fontUrl, fontName, nil))
       }
     }
     return fonts
