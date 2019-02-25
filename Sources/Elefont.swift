@@ -9,28 +9,28 @@ public final class Elefont {
 
   public class func eat(
     atPath path: String?,
-    completion handler: (([String]) -> Void)? = nil
+    completion: (([String]) -> Void)? = nil
   ) {
     guard let path = path else {
-      handler?([])
+      completion?([])
       return
     }
-    eat(at: URL(string: path), completion: handler)
+    eat(at: URL(string: path), completion: completion)
   }
 
   public class func eat(
     bundle: Bundle = .main,
-    completion handler: (([String]) -> Void)? = nil
+    completion: (([String]) -> Void)? = nil
   ) {
-    eat(at: bundle.bundleURL, completion: handler)
+    eat(at: bundle.bundleURL, completion: completion)
   }
 
   public class func eat(
     at url: URL?,
-    completion handler: (([String]) -> Void)? = nil
+    completion: (([String]) -> Void)? = nil
   ) {
     guard let url = url else {
-      handler?([])
+      completion?([])
       return
     }
     var loadedFonts: [Font] = []
@@ -46,11 +46,39 @@ public final class Elefont {
       }
     }
 
-    handler?(loadedFonts.map { $0.name })
+    completion?(loadedFonts.map { $0.name })
   }
 
-  public class func release(_: String) {
-    // TODO(mihai): fix this
+  public class func release(_ name: String) -> Bool {
+    let alreadyLoaded = allLoadedFonts.map { $0.name }
+    guard let idx = alreadyLoaded.index(of: name),
+      let ref = allLoadedFonts[idx].2 else {
+      return false
+    }
+    var error: Unmanaged<CFError>?
+    if CTFontManagerUnregisterGraphicsFont(ref, &error) {
+      log("Successfully released font: '\(name)'.")
+      return true
+    } else {
+      guard let error = error?.takeRetainedValue() else {
+        log("Failed to release font '\(name)'.")
+        return false
+      }
+      let errorDescription = CFErrorCopyDescription(error)
+      log("Failed to release font '\(name)': \(String(describing: errorDescription))")
+      return false
+    }
+  }
+
+  public class func releaseEverything(completion: (([String]) -> Void)? = nil) {
+    let bkp = allLoadedFonts
+    var released: [String] = []
+    for font in bkp {
+      if release(font.name) {
+        released.append(font.name)
+      }
+    }
+    completion?(released)
   }
 }
 

@@ -31,4 +31,11 @@ class BaseVC: UIViewController,
 
   var fontNames: [String] { return [] }
   func loadFonts() {}
+  func reloadOriginalFontNames() {}
+  func releaseFonts() {
+    Elefont.releaseEverything { fonts -> Void in
+      print("Release Fonts", fonts)
+      self.reloadOriginalFontNames()
+    }
+  }
 }

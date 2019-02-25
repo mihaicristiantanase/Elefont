@@ -12,7 +12,7 @@
         <!--Path-->
         <scene sceneID="S8b-RO-O5f">
             <objects>
-                <viewController id="C6f-me-lg6" customClass="LocalVC" customModule="Elefont" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C6f-me-lg6" customClass="LocalVC" customModule="ElefontDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X3V-Ho-r2j"/>
                         <viewControllerLayoutGuide type="bottom" id="czX-dS-cUf"/>
@@ -50,7 +50,7 @@
         <!--Bundle-->
         <scene sceneID="IXq-R2-AHm">
             <objects>
-                <viewController id="Aao-Ix-cyb" customClass="BundleVC" customModule="Elefont" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Aao-Ix-cyb" customClass="BundleVC" customModule="ElefontDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tY1-oR-Ubv"/>
                         <viewControllerLayoutGuide type="bottom" id="NZq-KN-v5F"/>
@@ -104,11 +104,16 @@
         <!--TabVC-->
         <scene sceneID="v5b-dn-Jmj">
             <objects>
-                <tabBarController id="L3A-Dw-XYd" customClass="TabVC" customModule="Elefont" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="L3A-Dw-XYd" customClass="TabVC" customModule="ElefontDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="AzT-dc-Sbo">
+                        <barButtonItem key="leftBarButtonItem" title="Release fonts" style="done" id="2CZ-u5-1I3">
+                            <connections>
+                                <action selector="didPressReleaseB" destination="L3A-Dw-XYd" id="vIF-G0-DXr"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Load fonts" style="done" id="8lZ-K6-fma">
                             <connections>
-                                <action selector="didPressB" destination="L3A-Dw-XYd" id="Xos-W4-0ZR"/>
+                                <action selector="didPressLoadB" destination="L3A-Dw-XYd" id="Xos-W4-0ZR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

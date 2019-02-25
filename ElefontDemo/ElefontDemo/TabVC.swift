@@ -3,9 +3,15 @@
 import UIKit
 
 class TabVC: UITabBarController {
-  @IBAction func didPressB() {
+  @IBAction func didPressLoadB() {
     if let vc = selectedViewController as? BaseVC {
       vc.loadFonts()
+    }
+  }
+
+  @IBAction func didPressReleaseB() {
+    if let vc = selectedViewController as? BaseVC {
+      vc.releaseFonts()
     }
   }
 }

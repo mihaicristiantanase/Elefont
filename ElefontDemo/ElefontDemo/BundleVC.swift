@@ -3,19 +3,21 @@
 import Elefont
 import UIKit
 
+private var originalFontNames = [
+  "OpenSans",
+  "OpenSans-Bold",
+  "OpenSans-BoldItalic",
+  "OpenSans-Extrabold",
+  "OpenSans-ExtraboldItalic",
+  "OpenSans-Italic",
+  "OpenSans-Light",
+  "OpenSans-Semibold",
+  "OpenSans-SemiboldItalic",
+  "OpenSansLight-Italic",
+]
+
 final class BundleVC: BaseVC {
-  private lazy var _fontNames = [
-    "OpenSans",
-    "OpenSans-Bold",
-    "OpenSans-BoldItalic",
-    "OpenSans-Extrabold",
-    "OpenSans-ExtraboldItalic",
-    "OpenSans-Italic",
-    "OpenSans-Light",
-    "OpenSans-Semibold",
-    "OpenSans-SemiboldItalic",
-    "OpenSansLight-Italic",
-  ]
+  private lazy var _fontNames = originalFontNames
 
   override var fontNames: [String] { return _fontNames }
 
@@ -25,5 +27,10 @@ final class BundleVC: BaseVC {
       self._fontNames = fonts.sorted()
       self.tableView.reloadSections([0], with: .automatic)
     }
+  }
+
+  override func reloadOriginalFontNames() {
+    _fontNames = originalFontNames
+    tableView.reloadSections([0], with: .automatic)
   }
 }
