@@ -224,7 +224,7 @@
 				554B83861E6B50C400798F7A /* PBXTargetDependency */,
 			);
 			name = ElefontDemo;
-			productName = "Font Blaster Sample Project";
+			productName = "Elefont Project";
 			productReference = 8E7CBE8B1AF9BD7200009618 /* ElefontDemo.app */;
 			productType = "com.apple.product-type.application";
 		};

@@ -20,7 +20,7 @@ final class BundleVC: BaseVC {
   override var fontNames: [String] { return _fontNames }
 
   override func loadFonts() {
-    Elefont.blast { fonts -> Void in
+    Elefont.eat { fonts -> Void in
       print("Loaded Fonts", fonts)
       self._fontNames = fonts.sorted()
       self.tableView.reloadSections([0], with: .automatic)

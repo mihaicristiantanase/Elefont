@@ -36,7 +36,7 @@ final class LocalVC: BaseVC {
 
   override func loadFonts() {
     let url = Bundle.main.resourceURL!.appendingPathComponent("KineticPlasma/")
-    Elefont.blast(at: url) { fonts -> Void in
+    Elefont.eat(at: url) { fonts -> Void in
       print("Loaded Fonts", fonts)
       self._fontNames = fonts.sorted()
       self.tableView.reloadSections([0], with: .automatic)

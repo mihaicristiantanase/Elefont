@@ -7,7 +7,7 @@ import UIKit
 public final class Elefont {
   public static var debugEnabled = false
 
-  public class func blast(
+  public class func eat(
     atPath path: String?,
     completion handler: (([String]) -> Void)? = nil
   ) {
@@ -15,17 +15,17 @@ public final class Elefont {
       handler?([])
       return
     }
-    blast(at: URL(string: path), completion: handler)
+    eat(at: URL(string: path), completion: handler)
   }
 
-  public class func blast(
+  public class func eat(
     bundle: Bundle = .main,
     completion handler: (([String]) -> Void)? = nil
   ) {
-    blast(at: bundle.bundleURL, completion: handler)
+    eat(at: bundle.bundleURL, completion: handler)
   }
 
-  public class func blast(
+  public class func eat(
     at url: URL?,
     completion handler: (([String]) -> Void)? = nil
   ) {
