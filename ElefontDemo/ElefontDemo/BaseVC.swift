@@ -10,6 +10,8 @@ class BaseVC: UIViewController,
   override func viewDidLoad() {
     super.viewDidLoad()
     Elefont.debugEnabled = true
+
+    listFonts()
   }
 
   func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
