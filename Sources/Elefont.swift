@@ -48,12 +48,16 @@ public final class Elefont {
 
     handler?(loadedFonts.map { $0.name })
   }
+
+  public class func release(_: String) {
+    // TODO(mihai): fix this
+  }
 }
 
 typealias FontPath = URL
 typealias FontName = String
 typealias FontExtension = String
-typealias Font = (url: FontPath, name: FontName, ext: FontExtension)
+typealias Font = (url: FontPath, name: FontName)
 
 var allLoadedFonts: [Font] = []
 
@@ -127,7 +131,6 @@ extension Elefont {
   class func loadFont(_ font: Font) -> Font? {
     let fileURL: FontPath = font.url
     let name = font.name
-    let ext = font.ext
     var loadedFontName: String?
     var error: Unmanaged<CFError>?
     if let data = try? Data(contentsOf: fileURL) as CFData,
@@ -154,7 +157,7 @@ extension Elefont {
       log("Failed to load font '\(name)': \(String(describing: errorDescription))")
     }
     if let lfn = loadedFontName {
-      return (fileURL, lfn, ext)
+      return (fileURL, lfn)
     }
     return nil
   }
@@ -168,20 +171,19 @@ extension Elefont {
   class func fonts(_ contents: [URL]) -> [Font] {
     var fonts = [Font]()
     for fontUrl in contents {
-      if let parsedFont = font(fontUrl) {
-        fonts.append((fontUrl, parsedFont.0, parsedFont.1))
+      if let fontName = font(fontUrl) {
+        fonts.append((fontUrl, fontName))
       }
     }
     return fonts
   }
 
-  class func font(_ fontUrl: URL) -> (FontName, FontExtension)? {
+  class func font(_ fontUrl: URL) -> FontName? {
     let name = fontUrl.lastPathComponent
     let comps = name.components(separatedBy: ".")
     if comps.count < 2 { return nil }
     let fname = comps[0 ..< comps.count - 1].joined(separator: ".")
-    let ext = comps.last!
-    return SupportedFontExtensions(ext) != nil ? (fname, ext) : nil
+    return SupportedFontExtensions(comps.last!) != nil ? fname : nil
   }
 
   class func log(_ message: String) {
