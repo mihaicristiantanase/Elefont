@@ -4,16 +4,16 @@ import Elefont
 import UIKit
 
 private var originalFontNames = [
-  "OpenSans",
-  "OpenSans-Bold",
-  "OpenSans-BoldItalic",
-  "OpenSans-Extrabold",
-  "OpenSans-ExtraboldItalic",
-  "OpenSans-Italic",
-  "OpenSans-Light",
-  "OpenSans-Semibold",
-  "OpenSans-SemiboldItalic",
-  "OpenSansLight-Italic",
+  "Open Sans",
+  "Open Sans Bold",
+  "Open Sans Bold Italic",
+  "Open Sans Extra Bold",
+  "Open Sans Extra Bold Italic",
+  "Open Sans Italic",
+  "Open Sans Light",
+  "Open Sans Semi Bold",
+  "Open Sans Semi Bold Italic",
+  "Open SansLight Italic",
 ]
 
 final class BundleVC: BaseVC {
